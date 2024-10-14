@@ -1,0 +1,99 @@
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ357v5LsyQs3jM8IZUS-yNQHXDHasXg0LPkA&s'); /* Set your background image here */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for the container */
+    padding: 40px; /* Increased padding for a larger container */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Larger shadow for a more prominent look */
+    width: 700px; /* Increased container width */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 40px; /* Larger font size for the title */
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    width: 75%;
+    padding: 20px; /* Larger padding for the input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 22px; /* Larger font size for input text */
+}
+
+button {
+    padding: 18px 30px; /* Larger button size */
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px; /* Larger font size for buttons */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+li.task-item {
+    background-color: #f9f9f9;
+    padding: 18px; /* Larger padding for task items */
+    margin-bottom: 18px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+    font-size: 20px; /* Larger font size for task items */
+}
+
+.task-actions button {
+    margin-left: 12px; /* More space between action buttons */
+}
+
+.task-actions button.edit {
+    background-color: #ffc107;
+}
+
+.task-actions button.update {
+    background-color: #17a2b8;
+}
+
+.task-actions button.delete {
+    background-color: #dc3545;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
